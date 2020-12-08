@@ -1,0 +1,23 @@
+@import "../../scss/index.scss";
+
+.list-users {
+
+
+    padding-inline-start: 0;
+
+
+    &__user {
+        padding: 15px 30px;
+        color: $font-light;
+        border-bottom: 1px solid $border-grey;
+        transition: 0.3s;
+
+        &:hover {
+            color: $font-light;
+            background-color: #203344;
+            text-decoration: none;
+
+        }
+
+    }
+}

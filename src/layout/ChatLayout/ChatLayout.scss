@@ -1,0 +1,62 @@
+@import "../../scss/index.scss";
+
+.chat-layout {
+    .menu {
+        margin-right: 100%;
+    }
+
+    .show {
+        display: flex;
+    }
+
+    max-width: 98% !important;
+
+
+    &__menu {
+        padding-right: 0 !important;
+    }
+
+    &__content {
+
+        height: 100vh;
+        width: 100%;
+        overflow: scroll;
+        padding: 0 !important;
+        border-right: 1px solid $border-grey;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__right {
+        height: 100vh;
+        width: 100vh;
+
+        padding: 0 !important;
+        border-right: 1px solid $border-grey;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+
+        h2 {
+            margin-top: 0 !important;
+            width: 100%;
+            height: 40px;
+            margin: 15px;
+            background-color: $background-grey-dark;
+        }
+
+        .fixed-b {
+            width: 80%;
+            margin-left: 5%;
+            margin-top: 5% !important;
+        }
+
+    }
+
+
+
+}

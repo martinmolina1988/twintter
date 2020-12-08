@@ -1,0 +1,114 @@
+@import "../../../scss/index.scss";
+
+.banner-avatar {
+  .botones {
+    display: flex;
+
+    .icon {
+      margin-top: 23px;
+      margin-left: 15px;
+      width: 30px !important;
+      height: 25px;
+
+      &:hover {
+        color: deeppink;
+        cursor: pointer;
+      }
+    }
+
+    .blocked {
+      margin-top: 23px;
+      margin-left: 15px;
+      width: 30px !important;
+      height: 25px;
+
+      color: deeppink;
+
+      &:hover {
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+
+
+
+  .message {
+    width: 50px;
+    height: 50px;
+    fill: $primary;
+    border: 3px solid $primary;
+    border-radius: 50px;
+    padding: 10px;
+    margin-top: 8px;
+
+    &:hover {
+      fill: cornflowerblue;
+      box-shadow: 0 0 5px rgba(0, 178, 255, 1),
+        0 0 10px rgba(0, 178, 255, 1);
+      cursor: pointer;
+    }
+  }
+
+  position: relative;
+  background-color: $hover;
+  height: 220px;
+  margin-bottom: 60px;
+  background-size: cover;
+  background-position: 0px;
+  background-repeat: no-repeat;
+
+  .avatar {
+    position: absolute;
+    bottom: -50px;
+    left: 20px;
+    background-color: $background-dark-light;
+    width: 150px;
+    height: 150px;
+    border: 4px solid $border-dark;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .options {
+    position: absolute;
+    bottom: -25px;
+    right: 15px;
+
+    button {
+
+      border-radius: 50px;
+      background-color: transparent;
+      width: 180px;
+      margin-left: 10px;
+
+      &:hover {
+        background-color: $primary;
+        opacity: 0.6;
+      }
+
+      &.unfollow {
+        background-color: $primary;
+
+        &:hover {
+          transition: 0.5s;
+          width: 200px;
+          border-color: $danger;
+          background-color: $danger;
+
+          &::before {
+            content: "Dejar de seguir";
+          }
+
+          transition: 0.5s;
+
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

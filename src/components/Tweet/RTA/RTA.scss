@@ -1,0 +1,12 @@
+@import "../../../scss/index.scss";
+
+.rta {
+    fill: $font-grey-light;
+    width: 25px;
+    height: 25px;
+
+    &:hover {
+        fill: $primary;
+    }
+
+}

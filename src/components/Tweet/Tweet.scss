@@ -1,0 +1,251 @@
+@import "../../scss/index.scss";
+
+p {
+    margin: 20px;
+}
+
+.lock {
+
+    margin-top: 50px;
+
+    margin-left: 10px;
+
+    display: flex;
+
+    .btn.btn-primary {
+        margin-left: 25px;
+
+        border-radius: 50px;
+        background-color: deeppink;
+        border: none;
+
+        &:hover {
+            background-color: darkred;
+            cursor: pointer;
+        }
+    }
+}
+
+.tw {
+    border-bottom: 1px solid $border-grey;
+    padding: 10px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #203344;
+    }
+
+
+
+    .list {
+        margin-left: 5%;
+    }
+
+    .close {
+        width: 30px;
+        height: 30px;
+        fill: deeppink;
+        margin-right: 10px;
+        margin-top: 10px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .denuncia {
+
+
+
+        .btn-primary:not(:disabled):not(.disabled):active {
+
+            border-color: transparent;
+        }
+
+        .btn-primary.dropdown-toggle {
+            border-color: transparent;
+        }
+
+        button {
+            width: 25px;
+            height: 25px;
+            background-color: transparent !important;
+            border-color: transparent;
+        }
+
+        .dropdown-menu {
+            padding: 0 !important;
+            background-color: transparent;
+
+        }
+
+        .dropdown-item {
+            color: white;
+
+        }
+
+        .dropdown-item:hover {
+            color: deeppink;
+            background-color: #192734 !important;
+
+        }
+    }
+}
+
+.resp {
+    color: lavender;
+
+    margin-left: 13%;
+    padding-bottom: 10px;
+
+    &:hover {
+        color: $primary;
+        cursor: pointer;
+    }
+
+}
+
+.name {
+    font-weight: bold;
+
+
+    color: white;
+
+
+    span {
+        margin-left: 10px;
+        font-size: 12px;
+        font-weight: normal;
+        color: $font-grey;
+    }
+}
+
+.tweet {
+
+    .rta {
+        color: $primary;
+        margin-left: 5px;
+    }
+
+    .mensaje {
+        margin-left: 25% !important;
+        padding: 15px;
+        background-color: rgba(121, 10, 121, 0.5);
+        ;
+        border-radius: 0 25px 25px 25px;
+    }
+
+
+    .contenedor {
+
+        margin: 10px;
+        padding: 15px;
+        border-radius: 25px;
+        border: 3px solid $border-grey;
+        width: 100%;
+        box-shadow: 0 0 5px rgba(0, 178, 255, 1),
+            0 0 10px rgba(0, 178, 255, 1);
+    }
+
+    width: 100%;
+
+    .media {
+        width: auto;
+        margin-top: 10px;
+    }
+
+    .containerl {
+
+        display: flex;
+    }
+
+    .count {
+        padding-top: 13px;
+        margin-left: 5px;
+    }
+
+    a {
+        color: $font-light;
+
+        &:hover {
+            color: $font-light;
+            text-decoration: none;
+        }
+    }
+
+
+
+    display: flex;
+    padding: 7px 20px;
+    transition: 0.3s;
+
+
+
+    .avatar {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+    }
+
+    .avatar-lite {
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+    }
+
+    .name {
+        font-weight: bold;
+
+
+        a {
+            color: white;
+        }
+
+        span {
+            margin-left: 10px;
+            font-size: 12px;
+            font-weight: normal;
+            color: $font-grey;
+        }
+    }
+}
+
+.icons {
+    display: inline;
+    display: flex;
+    justify-content: space-evenly;
+
+
+
+    .message {
+        fill: #5f6d77;
+
+
+        &:hover {
+            fill: $primary;
+        }
+    }
+
+    span {
+        margin-left: 10px;
+    }
+
+    .containerl {
+        display: flex;
+    }
+
+    .retweet {
+        fill: $font-grey-light;
+        width: 25px;
+        height: 25px;
+        margin-bottom: 5px;
+
+        &:hover {
+            fill: limegreen;
+        }
+    }
+
+
+
+
+}

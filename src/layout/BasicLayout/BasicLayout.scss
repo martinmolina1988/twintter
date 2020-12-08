@@ -1,0 +1,34 @@
+@import "../../scss/index.scss";
+
+.input {
+    margin-left: 40%;
+}
+
+.basic-layout {
+    max-width: 98% !important;
+
+
+
+    .menu {
+        margin-top: 20px;
+        margin-right: 15%;
+    }
+
+    &__menu {
+        padding-right: 0 !important;
+    }
+
+    &__content {
+
+        height: 100vh;
+        width: 100vh;
+        overflow: scroll;
+        padding: 0 !important;
+        border-right: 1px solid $border-grey;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+}

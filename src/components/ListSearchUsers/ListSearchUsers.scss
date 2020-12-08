@@ -1,0 +1,44 @@
+@import "../../scss/index.scss";
+
+.list-search-users {
+
+    box-shadow: 0 0 5px rgba(0, 178, 255, 1),
+        0 0 10px rgba(0, 178, 255, 1);
+    width: 320px;
+    padding-top: 10px;
+    padding-inline-start: 0;
+    border-radius: 25px;
+
+
+
+
+
+
+}
+
+.box {
+
+    >p {
+        padding-left: 15px;
+        padding-bottom: 10px;
+        border-bottom: 10px solid $border-grey;
+    }
+
+    .list-search-user {
+
+        padding-inline-start: 0;
+        margin-right: 20px;
+        width: 320px;
+        padding-top: 10px;
+        padding-left: 15px;
+        color: $font-light;
+        border-bottom: 1px solid $border-grey;
+        transition: 0.3s;
+
+        &:hover {
+            color: $font-light;
+
+            text-decoration: none;
+        }
+    }
+}

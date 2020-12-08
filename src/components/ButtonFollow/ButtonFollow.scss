@@ -1,0 +1,36 @@
+@import "../../scss/index.scss";
+
+.button-follow {
+    button {
+
+        border-radius: 50px;
+        background-color: transparent;
+        width: 180px;
+
+        &:hover {
+            background-color: $primary;
+            opacity: 0.6;
+        }
+
+        &.unfollow {
+            background-color: $primary;
+
+            &:hover {
+                transition: 0.5s;
+                width: 200px;
+                border-color: $danger;
+                background-color: $danger;
+
+                &::before {
+                    content: "Dejar de seguir";
+                }
+
+                transition: 0.5s;
+
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+}

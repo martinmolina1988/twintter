@@ -1,0 +1,99 @@
+@import "../../../scss/index.scss";
+
+.tweet-quote-modal {
+    .modal-content {
+        background-color: $hover;
+        border-radius: 25px;
+        overflow: hidden;
+
+        .modal-header {
+            border-bottom: 1px solid $border-grey;
+            padding: 15px;
+
+            .modal-title {
+                display: flex;
+
+                svg {
+                    width: 15px;
+                    height: 15px;
+                    fill: $primary;
+                    margin-left: 10px;
+                    margin-right: 70px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .modal-body {
+            padding: 0;
+
+            form {
+                textarea {
+                    background-color: $background-grey-dark;
+                    border: 0;
+                    font-size: 20px;
+                    color: $font-light;
+                    padding: 10px 20px;
+                    resize: none;
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+
+                .count {
+                    margin: 15px;
+
+                    &.error {
+                        color: $danger;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.user {
+    margin: 10px 25px;
+    display: inherit;
+
+    h2 {
+        margin: 5px;
+        margin-left: 0;
+    }
+
+    .div {
+        display: inline;
+    }
+
+    p {
+        width: 500px;
+    }
+
+    justify-content: space-between;
+
+
+
+
+
+    button {
+
+        background-color: transparent;
+        border-radius: 50px;
+        width: 150px;
+        height: 50px;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 10px;
+
+        &:hover {
+            transition: 0.4s;
+            background-color: $primary;
+        }
+    }
+
+}

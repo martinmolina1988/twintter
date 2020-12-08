@@ -1,0 +1,134 @@
+@import "../../scss/index.scss";
+
+.h3 {
+    padding-inline-start: 0;
+    margin-top: 10px;
+    border-bottom: 1px solid $font-grey-light;
+
+    h3 {
+        margin-left: 25px;
+    }
+}
+
+.Tweet {
+
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+
+    a {
+        color: ivory;
+        font-weight: bold;
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .container {
+        .rta {
+            color: $primary;
+            margin-left: 5px;
+        }
+
+        display: inline;
+        padding: 0 20px;
+    }
+
+
+
+
+
+
+}
+
+.cabecera {
+
+    .div {
+        margin-top: 10px;
+    }
+
+    .fecha {
+        color: $font-grey-light;
+    }
+
+    .count {
+        font-weight: bold;
+        padding-left: 0;
+
+    }
+
+    .icons {
+        border-bottom: 1px solid $font-grey-light;
+        border-top: 1px solid $font-grey-light;
+        display: inline;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 25px;
+        padding-bottom: 25px;
+        padding-top: 25px;
+        width: 95%;
+    }
+
+    .mensaje {
+        margin-top: 25px;
+        font-weight: bold;
+    }
+
+    margin-left: 40px;
+
+    svg {
+        width: 25px;
+        height: 25px;
+        fill: $font-grey-light;
+        margin-left: 10px;
+        margin-right: 70px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .heart {
+        fill: $font-grey-light;
+
+        &:hover {
+            fill: red;
+        }
+    }
+
+    .rt {
+        fill: $font-grey-light;
+        width: 25px;
+        height: 25px;
+
+        &:hover {
+            fill: limegreen;
+        }
+
+    }
+
+    .rt-onn {
+        width: 25px;
+        height: 25px;
+        fill: limegreen;
+    }
+
+    .link.btn.btn-primary {
+        padding-left: 0;
+
+
+        border-radius: 50px;
+        background-color: transparent !important;
+        border-color: transparent !important;
+        box-shadow: none;
+
+        &:hover {
+            text-decoration-line: underline;
+        }
+    }
+
+    margin-bottom: 40px;
+
+}

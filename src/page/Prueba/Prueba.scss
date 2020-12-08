@@ -1,0 +1,45 @@
+@import "../../scss/index.scss";
+
+.notif {
+    margin: 15px;
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    p {
+        font-weight: bold;
+        margin-top: 10px;
+
+    }
+
+
+    .title {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .rt {
+
+        width: 30px;
+        height: 30px;
+        fill: green;
+    }
+
+    .mensajes {
+        margin: 8px;
+        width: 30px;
+        height: 30px;
+        fill: rgb(149, 168, 231);
+    }
+
+    .like {
+
+        width: 30px;
+        height: 30px;
+        fill: rgb(255, 0, 0);
+    }
+}

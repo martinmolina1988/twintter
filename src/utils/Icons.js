@@ -1,0 +1,14 @@
+export { ReactComponent as Location } from "../assets/svg/location.svg";
+export { ReactComponent as Link } from "../assets/svg/link.svg";
+export { ReactComponent as DateBirth } from "../assets/svg/date-birth.svg";
+export { ReactComponent as Close } from "../assets/svg/close.svg";
+export { ReactComponent as Camera } from "../assets/svg/camera.svg";
+export { ReactComponent as Lupa } from "../assets/svg/lupa.svg";
+export { ReactComponent as Heart } from "../assets/svg/heart.svg";
+export { ReactComponent as Retweet } from "../assets/svg/retweet.svg";
+export { ReactComponent as Message } from "../assets/svg/message.svg";
+export { ReactComponent as RtNotif } from "../assets/svg/retweet-notif.svg";
+export { ReactComponent as LikeNotif } from "../assets/svg/heart-notif.svg";
+export { ReactComponent as Campana } from "../assets/svg/campana.svg";
+export { ReactComponent as Denuncia } from "../assets/svg/denuncia.svg";
+export { ReactComponent as Greater } from "../assets/svg/greater.svg"; 

@@ -1,0 +1,92 @@
+@import "../../scss/index.scss";
+
+
+@media only screen and (max-width: 1000px) {
+    #input {
+        margin-left: 65% !important;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 850px) {
+    #input {
+        margin-left: 60% !important;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #input {
+        margin-left: 60% !important;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #input {
+        margin-left: 40% !important;
+    }
+}
+
+
+.search-input {
+
+
+    #formContent {
+        padding: 2%;
+    }
+
+    form {
+        padding: 5px;
+    }
+
+    /*Insert this style in your css*/
+    .fontAwesome {
+        font-family: Helvetica, 'FontAwesome', sans-serif;
+    }
+
+    svg {
+        float: right;
+        margin-top: 30px;
+        width: 15px;
+        height: 15px;
+        fill: white;
+
+    }
+
+    input {
+        border-radius: 50px;
+        background-color: #253341;
+        padding: 10px 30px;
+        margin-bottom: 10px;
+        width: 250px;
+        border: 0;
+        color: $font-light;
+        text-indent: 10px;
+
+        &:focus {
+            box-shadow: 0 0 3pt 2pt $primary;
+            outline: none;
+
+        }
+    }
+
+    label {
+        margin-top: 20px;
+        position: relative;
+    }
+
+    label:before {
+        content: "";
+        color: wheat;
+        fill: white;
+        position: absolute;
+        left: 10px;
+        top: 0;
+        bottom: 10px;
+        width: 20px;
+        background: url("../../assets/png/lupa.png") center / contain no-repeat;
+
+    }
+
+}

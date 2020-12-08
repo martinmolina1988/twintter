@@ -1,0 +1,24 @@
+@import "../../../scss/index.scss";
+
+.like {
+    margin-top: auto;
+
+    .heart {
+        fill: $font-grey-light;
+
+        &:hover {
+
+            fill: red;
+        }
+
+    }
+
+    .heartlike {
+
+        fill: red;
+
+
+    }
+
+
+}
