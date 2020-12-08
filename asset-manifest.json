@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/twintter/static/css/main.98d9e0f8.chunk.css",
+    "main.js": "/twintter/static/js/main.e37956be.chunk.js",
+    "main.js.map": "/twintter/static/js/main.e37956be.chunk.js.map",
+    "runtime-main.js": "/twintter/static/js/runtime-main.fa1b868c.js",
+    "runtime-main.js.map": "/twintter/static/js/runtime-main.fa1b868c.js.map",
+    "static/css/2.7ae221c3.chunk.css": "/twintter/static/css/2.7ae221c3.chunk.css",
+    "static/js/2.d63b5044.chunk.js": "/twintter/static/js/2.d63b5044.chunk.js",
+    "static/js/2.d63b5044.chunk.js.map": "/twintter/static/js/2.d63b5044.chunk.js.map",
+    "index.html": "/twintter/index.html",
+    "static/css/2.7ae221c3.chunk.css.map": "/twintter/static/css/2.7ae221c3.chunk.css.map",
+    "static/css/main.98d9e0f8.chunk.css.map": "/twintter/static/css/main.98d9e0f8.chunk.css.map",
+    "static/js/2.d63b5044.chunk.js.LICENSE.txt": "/twintter/static/js/2.d63b5044.chunk.js.LICENSE.txt",
+    "static/media/camera.d25775ca.svg": "/twintter/static/media/camera.d25775ca.svg",
+    "static/media/campana.d7e10591.svg": "/twintter/static/media/campana.d7e10591.svg",
+    "static/media/close.da5c4222.svg": "/twintter/static/media/close.da5c4222.svg",
+    "static/media/date-birth.a0465456.svg": "/twintter/static/media/date-birth.a0465456.svg",
+    "static/media/denuncia.2471c038.svg": "/twintter/static/media/denuncia.2471c038.svg",
+    "static/media/greater.107642b2.svg": "/twintter/static/media/greater.107642b2.svg",
+    "static/media/heart-notif.f6e722c0.svg": "/twintter/static/media/heart-notif.f6e722c0.svg",
+    "static/media/heart.35384cfe.svg": "/twintter/static/media/heart.35384cfe.svg",
+    "static/media/link.93889986.svg": "/twintter/static/media/link.93889986.svg",
+    "static/media/location.6b82d71c.svg": "/twintter/static/media/location.6b82d71c.svg",
+    "static/media/logo-white.13c88c37.png": "/twintter/static/media/logo-white.13c88c37.png",
+    "static/media/logo.0d659bb2.png": "/twintter/static/media/logo.0d659bb2.png",
+    "static/media/SearchInput.scss": "/twintter/static/media/lupa.c17f6f30.png",
+    "static/media/lupa.fe617291.svg": "/twintter/static/media/lupa.fe617291.svg",
+    "static/media/message.34834fc8.svg": "/twintter/static/media/message.34834fc8.svg",
+    "static/media/retweet-notif.807566e9.svg": "/twintter/static/media/retweet-notif.807566e9.svg",
+    "static/media/retweet.0b01c33d.svg": "/twintter/static/media/retweet.0b01c33d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fa1b868c.js",
+    "static/css/2.7ae221c3.chunk.css",
+    "static/js/2.d63b5044.chunk.js",
+    "static/css/main.98d9e0f8.chunk.css",
+    "static/js/main.e37956be.chunk.js"
+  ]
+}
