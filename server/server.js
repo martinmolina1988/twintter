@@ -18,7 +18,7 @@ const port = process.env.PORT || 3001;
 
 
 app.use('/', createProxyMiddleware({
-    target: "http://localhost:3000",
+    target: "https://twintter.herokuapp.com",
     changeOrigin: true
 }));
 
