@@ -9,9 +9,10 @@ import H2 from '../h2/H2';
 import Msjs from './Msjs';
 import "../h2/chat.scss"
 import socketIOClient from "socket.io-client";
+import { API_HOST2 } from '../../utils/constants';
 
 function Chat(props) {
-    const ENDPOINT = "http://localhost:3001";
+    const ENDPOINT = API_HOST2;
     const socket = socketIOClient(ENDPOINT);
     const { location, setLoadMsj, setLoadSend, loadSend } = props;
 

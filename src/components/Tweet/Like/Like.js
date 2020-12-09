@@ -6,9 +6,10 @@ import useAuth from '../../../hooks/useAuth';
 import { Heart } from "../../../utils/Icons"
 import socketIOClient from "socket.io-client";
 import "./Like.scss";
+import { API_HOST2 } from '../../../utils/constants';
 
 export default function Like(props) {
-    const ENDPOINT = "http://localhost:3001";
+    const ENDPOINT = API_HOST2;
     const socket = socketIOClient(ENDPOINT);
     const userLogged = useAuth();
     const { tweet, setLikes, likes } = props;

@@ -7,7 +7,8 @@ import socketIOClient from "socket.io-client";
 import "./Config.scss";
 import PasswordModal from '../../components/passwordModal';
 import EmailModal from '../../components/emailModal';
-const ENDPOINT = "http://localhost:3001";
+import { API_HOST2 } from '../../utils/constants';
+const ENDPOINT = API_HOST2;
 const socket = socketIOClient(ENDPOINT);
 
 export default function Config(props) {

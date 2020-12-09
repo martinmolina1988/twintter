@@ -20,7 +20,8 @@ import { reseteoNotif } from '../../api/notif';
 import { Campana, Denuncia } from "../../utils/Icons";
 import { getCountComplaint } from '../../api/denuncias';
 import socketIOClient from "socket.io-client";
-const ENDPOINT = "http://localhost:3001";
+import { API_HOST2 } from '../../utils/constants';
+const ENDPOINT = API_HOST2;
 const socket = socketIOClient(ENDPOINT);
 
 export default function LeftMenu(props) {

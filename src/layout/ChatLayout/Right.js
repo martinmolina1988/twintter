@@ -5,12 +5,13 @@ import { sendMessage, sendUserMessage } from '../../api/mensajes';
 import socketIOClient from "socket.io-client";
 import "./ChatLayout.scss"
 import useAuth from '../../hooks/useAuth';
+import { API_HOST2 } from '../../utils/constants';
 
 function Right(props) {
     const { us, userss, location } = props;
     const [loadMsj, setLoadMsj] = useState(false)
     const [userData, setUserData] = useState(null)
-    const ENDPOINT = "http://localhost:3001";
+    const ENDPOINT = API_HOST2;
     const socket = socketIOClient(ENDPOINT);
     const userLogged = useAuth();
 
