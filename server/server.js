@@ -6,13 +6,13 @@ var io = require("socket.io")(http);
 var consumer = require('./sockets/socket');
 consumer.start(io);
 
-const port = 3000;
+const port = 3001;
 
 
 
 
 app.use('/', createProxyMiddleware({
-    target: "https://twintter.herokuapp.com",
+    target: "http://localhost:3000",
     changeOrigin: true
 }));
 

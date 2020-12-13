@@ -8,8 +8,14 @@ import Prueba from "../page/Prueba/Prueba";
 import Messages from "../page/Messages";
 import Denuncias from "../page/Denuncias";
 import Config from "../page/Config/Config";
+import Socket from "../page/socket";
 
 export default [
+    {
+        path: "/socket",
+        exact: true,
+        page: Socket,
+    },
     {
         path: "/setting",
         exact: true,

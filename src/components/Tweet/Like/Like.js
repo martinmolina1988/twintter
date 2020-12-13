@@ -5,12 +5,12 @@ import { likeApi, getLikeApi, removeLikeApi } from "../../../api/tweet";
 import useAuth from '../../../hooks/useAuth';
 import { Heart } from "../../../utils/Icons"
 import socketIOClient from "socket.io-client";
-import "./Like.scss";
 import { API_HOST2 } from '../../../utils/constants';
+import "./Like.scss";
+import { Socketio } from '../../../page/socket/Socket';
 
 export default function Like(props) {
     const ENDPOINT = API_HOST2;
-    const socket = socketIOClient(ENDPOINT);
     const userLogged = useAuth();
     const { tweet, setLikes, likes } = props;
     const { like } = tweet;
@@ -19,7 +19,7 @@ export default function Like(props) {
 
 
     const Like = () => {
-        socket.emit("notif", {
+        Socketio.emit("notif", {
 
             userid: tweet?.userId,
             estado: true

@@ -10,6 +10,7 @@ import Msjs from './Msjs';
 import "../h2/chat.scss"
 import socketIOClient from "socket.io-client";
 import { API_HOST2 } from '../../utils/constants';
+import { Socketio } from '../socket/Socket';
 
 function Chat(props) {
     const ENDPOINT = API_HOST2;
@@ -25,15 +26,15 @@ function Chat(props) {
     const { us, userss, setUserData } = props;
     useEffect(() => {
 
-        socket.emit("conectado", {
+        Socketio.emit("conectado", {
             userid: userLogged._id
         })
 
-        socket.on("enviarMensaje", function (e) {
+        Socketio.on("enviarMensaje", function (e) {
             console.log("Servidor: ", e);
         })
 
-        socket.on("chat", function (e) {
+        Socketio.on("chat", function (e) {
             setSocketChat(e.estado)
         })
 

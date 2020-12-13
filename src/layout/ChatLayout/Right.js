@@ -6,13 +6,13 @@ import socketIOClient from "socket.io-client";
 import "./ChatLayout.scss"
 import useAuth from '../../hooks/useAuth';
 import { API_HOST2 } from '../../utils/constants';
+import { Socketio } from '../../page/socket/Socket';
 
 function Right(props) {
     const { us, userss, location } = props;
     const [loadMsj, setLoadMsj] = useState(false)
     const [userData, setUserData] = useState(null)
     const ENDPOINT = API_HOST2;
-    const socket = socketIOClient(ENDPOINT);
     const userLogged = useAuth();
 
     const [loadSend, setLoadSend] = useState(false)
@@ -23,7 +23,8 @@ function Right(props) {
 
         if (e.key === 'Enter') {
             if (mensaje !== "") {
-                socket.emit("chat", {
+
+                Socketio.emit("chat", {
 
                     userid: location.search.substring(1),
                     estado: true

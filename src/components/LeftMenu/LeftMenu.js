@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import "./LeftMenu.scss";
+
 import { Button, Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import LogoWhite from "../../assets/png/logo-white.png";
@@ -19,18 +19,23 @@ import Menu from '../Menu';
 import { reseteoNotif } from '../../api/notif';
 import { Campana, Denuncia } from "../../utils/Icons";
 import { getCountComplaint } from '../../api/denuncias';
-import socketIOClient from "socket.io-client";
-import { API_HOST2 } from '../../utils/constants';
-const ENDPOINT = API_HOST2;
-const socket = socketIOClient(ENDPOINT);
+import "./LeftMenu.scss";
+import { Socketio } from '../../page/socket/Socket';
+
+
 
 export default function LeftMenu(props) {
+
     const [data, setData] = useState(null);
     const { setRefreshCheckLogin } = props;
     const user = useAuth();
     const [showModal, setShowModal] = useState(false);
     const [notif, setNotif] = useState(false);
     const [userLogged, setUserLogged] = useState(false);
+    Socketio.emit("conectado", {
+        userid: user._id
+    });
+
     const logout = () => {
         logoutApi();
         setRefreshCheckLogin(true);
@@ -42,15 +47,12 @@ export default function LeftMenu(props) {
 
     useEffect(() => {
         if (user) {
-            socket.emit("conectado", {
-                userid: user._id
-            })
         }
-        socket.on("enviarMensaje", function (e) {
+        Socketio.on("enviarMensaje", function (e) {
             console.log("Servidor: ", e);
         })
 
-        socket.on("notif", function (e) {
+        Socketio.on("notif", function (e) {
             console.log("Servidor: ", e);
             setNotif(e.estado)
         })

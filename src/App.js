@@ -16,7 +16,6 @@ export default function App() {
     const [loadUser, setLoadUser] = useState(false);
     const [refreshCheckLogin, setRefreshCheckLogin] = useState(false);
 
-
     useEffect(() => {
 
         setRefreshCheckLogin(false);
