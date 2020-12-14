@@ -39,7 +39,7 @@ export default function SignInSignUp(props) {
     )
     function LeftComponent(params) {
         return (
-            <Col className="signin-signup__left" xs={6}>
+            <Col className="signin-signup__left d-none d-sm-none d-md-none d-lg-block" sm={0} xs={0} lg={6}>
 
                 <img src={LogoTwittor} alt="twittor" />
 
@@ -56,7 +56,7 @@ export default function SignInSignUp(props) {
     function RightComponent(props) {
         const { openModal, setShowModal, setRefreshCheckLogin } = props;
         return (
-            <Col className="signin-signup__right" xs={6}>
+            <Col className="signin-signup__right " sm={12} xs={12} lg={6}>
                 <div>
                     <img src={LogoWhiteTwittor} alt="twittor" />
                     <h2>Mirá lo que esta pasando en el mundo en este momento</h2>
