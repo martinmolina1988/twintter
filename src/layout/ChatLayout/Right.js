@@ -39,8 +39,9 @@ function Right(props) {
 
     }
     return (
-        <div>
+        <div>{userData &&
             <h2>{userData?.nombre} {userData?.apellidos} </h2>
+        }
 
 
             <Chat us={us} userss={userss}
@@ -48,7 +49,8 @@ function Right(props) {
                 loadSend={loadSend}
                 setLoadSend={setLoadSend}
                 setUserData={setUserData} />
-            {loadMsj &&
+
+            {loadMsj && userData &&
 
                 <input
                     className="fixed-b"
@@ -60,7 +62,8 @@ function Right(props) {
                     }}
                     onKeyPress={enter}
 
-                />}
+                />
+            }
 
         </div>
     )

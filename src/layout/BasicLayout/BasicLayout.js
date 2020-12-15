@@ -23,9 +23,7 @@ export default function BasicLayout(props) {
                 <SideBar setRefreshCheckLogin={setRefreshCheckLogin} />
             </div>
             <Container className={`basic-layout ${className}`}>
-                <div className="d-block d-sm-block d-md-block d-lg-none">
-                    <SearchInput className="inp" />
-                </div>
+
                 <Row >
                     <Col sm={1} xs={2} lg={3} className="basic-layout__menu  d-none d-sm-none d-md-none d-lg-block" >
 

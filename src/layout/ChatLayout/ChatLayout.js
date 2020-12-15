@@ -21,7 +21,6 @@ function ChatLayout(props) {
                 <SideBar setRefreshCheckLogin={setRefreshCheckLogin} />
             </div>
             <Container className={`chat-layout`}>
-                <Menu setRefreshCheckLogin={setRefreshCheckLogin} className="menu" />
                 <Row >
                     <Col sm={0} xs={0} className="chat-layout__menu d-none d-sm-none d-md-none d-lg-block"  >
                         <LeftMenu setRefreshCheckLogin={setRefreshCheckLogin} />
