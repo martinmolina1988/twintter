@@ -55,7 +55,7 @@
   height: 220px;
   margin-bottom: 60px;
   background-size: cover;
-  background-position: 0px;
+  background-position: center;
   background-repeat: no-repeat;
 
   .avatar {
@@ -74,13 +74,13 @@
 
   .options {
     position: absolute;
-    bottom: -25px;
+    bottom: -50px;
     right: 15px;
 
     button {
 
       border-radius: 50px;
-      background-color: transparent;
+      background-color: $primary;
       width: 180px;
       margin-left: 10px;
 

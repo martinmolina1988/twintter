@@ -1,0 +1,43 @@
+@import "../../scss/index.scss";
+
+.iconos {
+    border-top: 3px solid $border-grey;
+    padding-top: 12px !important;
+
+    svg {
+        margin-left: 16% !important;
+
+        &:hover {
+            color: $primary !important;
+            fill: $primary !important;
+            cursor: pointer;
+        }
+    }
+
+    .svg {
+
+        width: 18px !important;
+        fill: aliceblue !important;
+
+    }
+
+    a {
+        font-size: 20px;
+        color: $font-light;
+        font-weight: bold;
+        margin-bottom: 5px;
+
+
+        &:hover {
+            text-decoration: none;
+            color: $primary;
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+
+        svg {
+            width: 30px !important;
+
+        }
+    }
+}

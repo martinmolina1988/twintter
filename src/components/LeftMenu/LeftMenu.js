@@ -21,6 +21,7 @@ import { Campana, Denuncia } from "../../utils/Icons";
 import { getCountComplaint } from '../../api/denuncias';
 import "./LeftMenu.scss";
 import { Socketio } from '../../page/socket/Socket';
+import SideBar from '../sideBar';
 
 
 
@@ -107,8 +108,7 @@ export default function LeftMenu(props) {
         </div>
 
         <div className="d-block d-sm-block d-md-none d-lg-none">
-
-            <Menu setRefreshCheckLogin={setRefreshCheckLogin} />
+            <SideBar setRefreshCheckLogin={setRefreshCheckLogin} />
         </div>
     </>)
 
