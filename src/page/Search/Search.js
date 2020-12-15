@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom/cjs/react-router-dom.min';
 import { getUsersTweetApi } from '../../api/tweet';
 import queryString from "query-string";
 import BasicLayout from '../../layout/BasicLayout';
+import SearchInput from "../../components/SearchInput"
 import "./Search.scss";
 import ListTweet from '../../components/ListTweet';
 
@@ -36,9 +37,21 @@ function Search(props) {
 
     return (
         <BasicLayout className="search">
+            {!params.search ? (
+                <>
 
-            <h2>Resultados:</h2>
+                    <h2>Realiza una busqueda:</h2>
+
+                </>
+            ) : (
+                    <>
+                        <h2>Resultados:</h2>
+                    </>)
+
+            }
+            < SearchInput />
             <ListTweet tweets={tweets} />
+
         </BasicLayout>
     )
 }

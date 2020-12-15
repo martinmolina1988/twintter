@@ -1,36 +1,12 @@
 @import "../../scss/index.scss";
 
 
-@media only screen and (max-width: 1000px) {
-    #input {
-        margin-left: 65% !important;
-    }
-}
 
-
-
-
-@media only screen and (max-width: 850px) {
-    #input {
-        margin-left: 60% !important;
-    }
-}
-
-@media only screen and (max-width: 750px) {
-    #input {
-        margin-left: 60% !important;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    #input {
-        margin-left: 40% !important;
-    }
-}
 
 
 .search-input {
 
+    margin-left: 25%;
 
     #formContent {
         padding: 2%;
@@ -59,7 +35,7 @@
         background-color: #253341;
         padding: 10px 30px;
         margin-bottom: 10px;
-        width: 250px;
+        width: 100% !important;
         border: 0;
         color: $font-light;
         text-indent: 10px;

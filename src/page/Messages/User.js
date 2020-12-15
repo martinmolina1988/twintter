@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { getUserApi } from '../../api/user'
 import { API_HOST } from '../../utils/constants'
 import AvatarNoFound from "../../assets/png/avatar-no-found.png";
-import { Image } from 'react-bootstrap';
-import { withRouter } from 'react-router-dom';
+import { Image, Media } from 'react-bootstrap';
+import { Link, withRouter } from 'react-router-dom';
 import { getLastesMessage } from '../../api/mensajes';
 
 
@@ -46,18 +46,20 @@ function User(props) {
     }
     return (
         <>
-            <div sm={2} xs={2} lg={3} className="d-none d-sm-none d-md-block d-lg-block" >
-                <div className="messages"> <div className="perfil" onClick={onClick}>
+            <div sm={2} xs={2} lg={3} onClick={onClick} className="d-none d-sm-none d-md-block d-lg-block" >
+                <div className="messages"> <div className="perfil" >
+
                     <Image className="avatar" src={avatarUrl} roundedCircle />
                     <h6> {users?.nombre} {users?.apellidos} {"@" + users?.id}  </h6>
                 </div>
                     <p className="span">{mensaje?.[0].mensaje}</p>
                 </div>
             </div>
-            <div sm={1} xs={2} lg={3} className="d-block d-sm-block d-md-none d-lg-none ">
-                <div className="messages" onClick={onClick}>
-                    <Image className="avatar" src={avatarUrl} roundedCircle />
-
+            <div sm={1} xs={2} lg={3} onClick={onClick} className="d-block d-sm-block d-md-none d-lg-none ">
+                <div className="messages" >
+                    <Media as={Link} to={`/${users?.id}`} >
+                        <Image className="avatar" src={avatarUrl} roundedCircle />
+                    </Media>
 
                 </div>
             </div>

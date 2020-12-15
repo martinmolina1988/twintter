@@ -15,9 +15,9 @@ export default function Iconos() {
     return (
         <div className="iconos">
             <Link to="/"  > <FontAwesomeIcon icon={faHome} />  </Link>
-            <Lupa className="svg" />
+            <Link to="/search"   >  <Lupa className="svg" /></Link>
             <Link to="/notifications"  >     <FontAwesomeIcon icon={faBell} /> </Link>
             <Link to="/messages"> <FontAwesomeIcon icon={faComment} />  </Link>
-        </div>
+        </div >
     )
 }

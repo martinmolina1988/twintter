@@ -8,7 +8,7 @@ import { isEmpty } from 'lodash';
 import { Spinner } from 'react-bootstrap';
 import ListSearchUsers from '../ListSearchUsers';
 
-function searchInput(props) {
+function SearchInput(props) {
 
     const { location, history } = props;
     // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -126,5 +126,5 @@ function searchInput(props) {
     )
 }
 
-export default withRouter(searchInput)
+export default withRouter(SearchInput)
 

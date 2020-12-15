@@ -3,8 +3,8 @@ import moment from "moment"; import useAuth from '../../hooks/useAuth';
 import { API_HOST } from '../../utils/constants';
 import AvatarNoFound from "../../assets/png/avatar-no-found.png";
 import { useEffect } from 'react';
-import { Image } from 'react-bootstrap';
-import { withRouter } from 'react-router-dom';
+import { Image, Media } from 'react-bootstrap';
+import { Link, withRouter } from 'react-router-dom';
 import "../h2/chat.scss"
 
 function Msjs(props) {
@@ -32,7 +32,10 @@ function Msjs(props) {
                 userLogged._id !== msj.usersend &&
                 <div className="cn">
                     <div className="cont">
-                        <Image className="avatar" src={avatarUrl} roundedCircle />
+                        <Media as={Link} to={`/${msj?.usersend}`} >
+
+                            <Image className="avatar" src={avatarUrl} roundedCircle />
+                        </Media>
                         <p>{msj.mensaje} </p>
                     </div>
                     <span className="fecha">{moment(msj.fecha).fromNow()}</span>
