@@ -1,6 +1,5 @@
 import React from 'react';
 import "./RightMenu.scss";
-import { Lupa } from "../../utils/Icons";
 import SearchInput from '../SearchInput';
 
 

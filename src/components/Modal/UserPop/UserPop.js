@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import "./UserPop.scss";
-import { Popover, Overlay, Button, Image } from 'react-bootstrap';
+import { Popover, Overlay, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Location } from '../../../utils/Icons';
 import ButtonFollow from '../../ButtonFollow/ButtonFollow';

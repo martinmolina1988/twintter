@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Button, Image } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 import { getUserApi } from '../../../api/user';
 import { API_HOST } from '../../../utils/constants';
 import avatarNotFound from "../../../assets/png/avatar-no-found.png";

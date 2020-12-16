@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Button, Image, Media } from "react-bootstrap";
+import { Button, Image } from "react-bootstrap";
 import moment from "moment";
 import AvatarNoFound from "../../assets/png/avatar-no-found.png";
 import { API_HOST } from "../../utils/constants";

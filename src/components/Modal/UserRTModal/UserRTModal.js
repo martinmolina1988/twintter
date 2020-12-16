@@ -1,6 +1,6 @@
 import React from 'react';
 import { Modal } from 'react-bootstrap';
-import { isEmpty, map } from 'lodash';
+import { map } from 'lodash';
 import "./UserRTModal.scss";
 import User from './User';
 import { Close } from '../../../utils/Icons';

@@ -3,7 +3,6 @@ import { Modal, Form, Button } from 'react-bootstrap';
 import { Close } from "../../../utils/Icons";
 import classNames from 'classnames';
 import { toast } from "react-toastify";
-import { addTweetApi } from "../../../api/tweet";
 import "./ReTweetModal.scss";
 import TweetLite from '../../Tweet/TweetLite';
 import { rtApi, rtWhitQuoteApi } from '../../../api/rt';
@@ -14,7 +13,6 @@ import useAuth from '../../../hooks/useAuth';
 export default function ReTweetModal(props) {
     const { showModal, setShowModal, tweet } = props;
     const [message, setMessage] = useState("");
-    const [id, setId] = useState(null)
     const maxLength = 280;
     const userLogged = useAuth();
 

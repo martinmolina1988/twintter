@@ -11,10 +11,6 @@ import { getUserTweetApi } from '../../api/tweet';
 import { checkBlockedApi, unBlockedUserApi } from '../../api/bloqueos';
 import "./User.scss";
 import { getUserApi } from '../../api/user';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLock
-} from "@fortawesome/free-solid-svg-icons";
 
 
 function User(props) {
@@ -28,13 +24,18 @@ function User(props) {
   const [tweets, setTweets] = useState(null);
   const [iAmBlock, setIAmBlock] = useState(false);
   const [isBlock, setIsBlock] = useState(null);
+  const [noExiste, setNoExiste] = useState(null);
 
 
 
   useEffect(() => {
     getUserApi(params.id)
       .then((response) => {
-        if (!response) toast.error("El usuario que has visitado no existe");
+        if (!response) {
+          toast.error("El usuario que has visitado no existe");
+
+          setNoExiste(true);
+        }
         setUser(response);
       })
       .catch(() => {
@@ -105,58 +106,68 @@ function User(props) {
   return (
 
     < BasicLayout className="user" setRefreshCheckLogin={setRefreshCheckLogin} >
-      { !user ? (<>
-        <h2>Espere unos instantes..</h2>
-        <div className="load">
-          <Spinner
-            as="span"
-            animation="grow"
-            size="sm"
-            role="status"
-            arian-hidden="true"
-          /></div></>
-      ) : (
+      {
+        noExiste ? (
+          <h2>El usuario no existe</h2>
+        ) : (
+            !user ? (
 
-          iAmBlock ? (
-            <h2> Estas bloqueado!</h2>
-          ) :
-            (
 
-              isBlock ? (
-                <div className="lock">
-                  <h2>Bloqueaste a  {user?.nombre} {user?.apellidos}</h2>
-                  <Button onClick={unBlock} className="blocked" > Desbloquear</Button>
 
-                </div>) : (
+              <>
+                <h2>Espere unos instantes..</h2>
+                <div className="load">
+                  <Spinner
+                    as="span"
+                    animation="grow"
+                    size="sm"
+                    role="status"
+                    arian-hidden="true"
+                  /></div></>
 
-                  <>
+            ) : (
 
-                    <div className="user__title">
-                      <h2>{user ? ` ${user.nombre} ${user.apellidos}` : "El usuario no existe"} </h2></div>
-                    <BannerAvatar loggedUser={loggedUser} user={user} isBlock={isBlock} />
-                    <InfoUser user={user} />
-                    <div className="user__tweets" ><h3>Tweets</h3>
-                      {tweets && <ListTweets tweets={tweets} />}
-                      <Button onClick={moreData}>
-                        {!loadingTweets ? (
-                          loadingTweets !== 0 && 'Obtener mas tweets'
-                        ) : (
-                            <Spinner
-                              as="span"
-                              animation="grow"
-                              size="sm"
-                              role="status"
-                              arian-hidden="true"
-                            />
-                          )}
 
-                      </Button>
+                iAmBlock ? (
+                  <h2> Estas bloqueado!</h2>
+                ) :
+                  (
 
-                    </div></>
-                )
-            )
+                    isBlock ? (
+                      <div className="lock">
+                        <h2>Bloqueaste a  {user?.nombre} {user?.apellidos}</h2>
+                        <Button onClick={unBlock} className="blocked" > Desbloquear</Button>
 
-        )
+                      </div>) : (
+
+                        <>
+
+                          <div className="user__title">
+                            <h2>{user ? ` ${user.nombre} ${user.apellidos}` : "El usuario no existe"} </h2></div>
+                          <BannerAvatar loggedUser={loggedUser} user={user} isBlock={isBlock} />
+                          <InfoUser user={user} />
+                          <div className="user__tweets" ><h3>Tweets</h3>
+                            {tweets && <ListTweets tweets={tweets} />}
+                            <Button onClick={moreData}>
+                              {!loadingTweets ? (
+                                loadingTweets !== 0 && 'Obtener mas tweets'
+                              ) : (
+                                  <Spinner
+                                    as="span"
+                                    animation="grow"
+                                    size="sm"
+                                    role="status"
+                                    arian-hidden="true"
+                                  />
+                                )}
+
+                            </Button>
+
+                          </div></>
+                      )
+                  )
+              )
+          )
       }
     </BasicLayout >
   )

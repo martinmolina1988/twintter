@@ -1,17 +1,13 @@
 import React, { useEffect } from 'react'
 import { Button } from 'react-bootstrap';
 import io from "socket.io-client";
-import useAuth from '../../hooks/useAuth';
-import { slide as Menu } from 'react-burger-menu'
 import SideBar from '../../components/sideBar';
-const hostURL = "https://sheltered-plains-71715.herokuapp.com";
 export const Socketio = io.connect("https://sheltered-plains-71715.herokuapp.com", {
     reconnection: true
 });
 
 export default function Socket() {
 
-    const userLogged = useAuth();
 
 
     useEffect(() => {
@@ -43,7 +39,7 @@ export default function Socket() {
         <div onClick={enviarAMartin}>
 
             <SideBar />
-            <div id="page-wrap">
+            <div id="page-wrap" onClick={enviarARacing}>
                 <h1>Cool Restaurant 🍔🍕</h1>
                 <h2>Check out our offerings in the sidebar!</h2>
             </div>

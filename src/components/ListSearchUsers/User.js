@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Image, Media, Dropdown } from 'react-bootstrap';
+import { Image, Media } from 'react-bootstrap';
 import { API_HOST } from '../../utils/constants';
 import avatarNotFound from "../../assets/png/avatar-no-found.png";
 import { getUserApi } from '../../api/user';

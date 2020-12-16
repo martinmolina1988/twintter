@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import { Button, Dropdown } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import LogoWhite from "../../assets/png/logo-white.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,13 +9,12 @@ import {
     faUsers,
     faPowerOff,
     faHome,
-    faCog, faBell, faComment
+    faCog, faComment
 } from "@fortawesome/free-solid-svg-icons";
 import { logoutApi } from "../../api/auth";
 import useAuth from "../../hooks/useAuth";
 import TweetModal from "../Modal/TweetModal";
 import { getUserApi } from '../../api/user';
-import Menu from '../Menu';
 import { reseteoNotif } from '../../api/notif';
 import { Campana, Denuncia } from "../../utils/Icons";
 import { getCountComplaint } from '../../api/denuncias';
