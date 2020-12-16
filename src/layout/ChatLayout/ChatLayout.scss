@@ -17,8 +17,14 @@
     }
 
     &__content {
+        @media (min-width: 892px) {
+            height: 100vh !important;
+        }
 
-        height: 90vh;
+        @media (max-width: 1000px) {
+            height: 91vh !important;
+        }
+
         width: 100%;
         overflow: scroll;
         padding: 0 !important;
@@ -30,7 +36,14 @@
     }
 
     &__right {
-        height: 80vh;
+        @media (min-width: 892px) {
+            height: 100vh !important;
+        }
+
+        @media (max-width: 1000px) {
+            height: 91vh !important;
+        }
+
         width: 100vh;
 
         padding: 0 !important;

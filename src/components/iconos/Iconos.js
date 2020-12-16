@@ -13,11 +13,11 @@ import { Link } from 'react-router-dom';
 
 export default function Iconos() {
     return (
-        <div className="iconos">
+        <nav className="iconos navbar navbar-default navbar-fixed-bottom" role="navigation">
             <Link to="/"  > <FontAwesomeIcon icon={faHome} />  </Link>
             <Link to="/search"   >  <Lupa className="svg" /></Link>
             <Link to="/notifications"  >     <FontAwesomeIcon icon={faBell} /> </Link>
             <Link to="/messages"> <FontAwesomeIcon icon={faComment} />  </Link>
-        </div >
+        </nav >
     )
 }

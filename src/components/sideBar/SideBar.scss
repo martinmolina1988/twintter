@@ -42,6 +42,21 @@ body {
 }
 
 
+#react-burger-menu-btn {
+  color: aliceblue !important;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 0px;
+  background: transparent;
+  cursor: pointer;
+
+}
 
 /* The rest copied directly from react-burger-menu docs */
 
@@ -52,11 +67,12 @@ body {
   height: 30px;
   left: 36px;
   top: 36px;
+
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+  background: ghostwhite;
 }
 
 /* Position and sizing of clickable cross button */

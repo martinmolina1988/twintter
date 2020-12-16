@@ -12,6 +12,11 @@ import Socket from "../page/socket";
 
 export default [
     {
+        path: "/twintter",
+        exact: true,
+        page: Home,
+    },
+    {
         path: "/socket",
         exact: true,
         page: Socket,

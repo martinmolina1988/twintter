@@ -21,7 +21,14 @@
 
     &__content {
 
-        height: 90vh;
+        @media (min-width: 892px) {
+            height: 100vh !important;
+        }
+
+        @media (max-width: 1000px) {
+            height: 91vh !important;
+        }
+
         width: 100vh;
         overflow: scroll;
         padding: 0 !important;
