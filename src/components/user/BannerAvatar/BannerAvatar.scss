@@ -4,10 +4,18 @@
 .banner-avatar {
   .botones {
 
+    @media (max-width: 350px) {
+
+      display: grid !important;
+    }
+
+    @media (min-width:350px) {
+
+      display: flex !important;
+    }
 
 
 
-    display: flex;
 
     .icon {
       margin-top: 23px;
@@ -85,11 +93,20 @@
     right: 15px;
 
     button {
+      @media (max-width: 350px) {
+
+        margin-left: 1px;
+      }
+
+      @media (min-width:350px) {
+
+        margin-left: 10px;
+      }
 
       border-radius: 50px;
       background-color: $primary;
       width: auto;
-      margin-left: 10px;
+
 
       &:hover {
         background-color: $primary;
