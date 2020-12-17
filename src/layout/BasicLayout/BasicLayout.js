@@ -34,9 +34,10 @@ export default function BasicLayout(props) {
                         <RightMenu />
                     </Col>
                 </Row>
-                <Row sm={12} xs={12} className="  d-block d-sm-block d-md-block d-lg-none">
-                    <Iconos />
-                </Row>
+
             </Container>
+            <div sm={12} xs={12} className="  d-block d-sm-block d-md-block d-lg-none">
+                <Iconos />
+            </div>
         </>)
 }
