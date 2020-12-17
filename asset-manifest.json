@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/twintter/static/css/main.e45094df.chunk.css",
+    "main.css": "/twintter/static/css/main.0f69924a.chunk.css",
     "main.js": "/twintter/static/js/main.50ee6aad.chunk.js",
     "main.js.map": "/twintter/static/js/main.50ee6aad.chunk.js.map",
     "runtime-main.js": "/twintter/static/js/runtime-main.fa1b868c.js",
@@ -10,7 +10,7 @@
     "static/js/2.8d0922cd.chunk.js.map": "/twintter/static/js/2.8d0922cd.chunk.js.map",
     "index.html": "/twintter/index.html",
     "static/css/2.7ae221c3.chunk.css.map": "/twintter/static/css/2.7ae221c3.chunk.css.map",
-    "static/css/main.e45094df.chunk.css.map": "/twintter/static/css/main.e45094df.chunk.css.map",
+    "static/css/main.0f69924a.chunk.css.map": "/twintter/static/css/main.0f69924a.chunk.css.map",
     "static/js/2.8d0922cd.chunk.js.LICENSE.txt": "/twintter/static/js/2.8d0922cd.chunk.js.LICENSE.txt",
     "static/media/camera.d25775ca.svg": "/twintter/static/media/camera.d25775ca.svg",
     "static/media/campana.d7e10591.svg": "/twintter/static/media/campana.d7e10591.svg",
@@ -34,7 +34,7 @@
     "static/js/runtime-main.fa1b868c.js",
     "static/css/2.7ae221c3.chunk.css",
     "static/js/2.8d0922cd.chunk.js",
-    "static/css/main.e45094df.chunk.css",
+    "static/css/main.0f69924a.chunk.css",
     "static/js/main.50ee6aad.chunk.js"
   ]
 }
