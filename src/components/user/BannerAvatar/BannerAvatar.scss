@@ -1,7 +1,12 @@
 @import "../../../scss/index.scss";
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
 
 .banner-avatar {
   .botones {
+
+
+
+
     display: flex;
 
     .icon {
@@ -74,27 +79,16 @@
 
   .options {
 
-    @media (min-width:500px) {
-      position: absolute;
-      bottom: -50px;
-      right: 15px;
 
-    }
-
-    @media (max-width: 500px) {
-      position: absolute;
-      bottom: auto;
-      right: auto;
-      margin-left: 10% !important;
-
-
-    }
+    position: absolute;
+    bottom: -50px;
+    right: 15px;
 
     button {
 
       border-radius: 50px;
       background-color: $primary;
-      width: 180px;
+      width: auto;
       margin-left: 10px;
 
       &:hover {
@@ -107,12 +101,22 @@
 
         &:hover {
           transition: 0.5s;
-          width: 200px;
+          width: auto;
           border-color: $danger;
           background-color: $danger;
 
           &::before {
-            content: "Dejar de seguir";
+            @media (max-width: 768px) {
+
+              font-family: "Font Awesome 5 Free";
+              content: "\f503";
+            }
+
+            @media (min-width:768px) {
+
+              content: "Dejar de seguir";
+            }
+
           }
 
           transition: 0.5s;

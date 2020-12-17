@@ -14,7 +14,7 @@ import { withRouter } from 'react-router-dom';
 import { checkBlockedApi, BlockedUserApi, unBlockedUserApi } from '../../../api/bloqueos';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-    faLock
+    faLock, faUserCheck, faUserPlus
 } from "@fortawesome/free-solid-svg-icons";
 import { toast } from 'react-toastify';
 
@@ -108,23 +108,47 @@ function BannerAvatar(props) {
                     {loggedUser._id === user.id &&
                         <Button onClick={() => setShowModal(true)}> Editar perfil</Button>}
 
-                    {loggedUser._id !== user.id &&
-                        following !== null &&
-                        (following ? (
-                            <div className="botones">
-                                <Message as={Link} to={`/tweet?search=${user?.id}`} className="message" onClick={OnClick} />
+                    <div className="d-none d-sm-none d-md-block">
+                        {
+                            loggedUser._id !== user.id &&
+                            following !== null &&
+                            (following ? (
+                                <div className="botones">
+                                    <Message as={Link} to={`/tweet?search=${user?.id}`} className="message" onClick={OnClick} />
 
-                                <Button onClick={unFollow} className="unfollow"> {num < 1 ? <span>Siguiendo</span> : <Spinner animation="border" />}</Button>
-                                <FontAwesomeIcon className="icon" icon={faLock} onClick={Block} />
+                                    <Button onClick={unFollow} className="unfollow"> <span>Siguiendo</span> </Button>
+                                    <FontAwesomeIcon className="icon" icon={faLock} onClick={Block} />
+
+                                </div>) : (<div className="botones">
+                                    <Button onClick={onFollow}>  "Seguir" </Button>
+                                    <FontAwesomeIcon className="icon" icon={faLock} />
+                                </div>
+                                )
+
+                            )
+                        }
+                    </div>
+                    <div className="d-block d-sm-block d-md-none">
+                        {
+                            loggedUser._id !== user.id &&
+                            following !== null &&
+                            (following ? (
+                                <div className="botones">
+                                    <Message as={Link} to={`/tweet?search=${user?.id}`} className="message" onClick={OnClick} />
+
+                                    <Button onClick={unFollow} className="unfollow"> <span>  <FontAwesomeIcon icon={faUserCheck} /></span> </Button>
+                                    <FontAwesomeIcon className="icon" icon={faLock} onClick={Block} />
 
 
-                            </div>) : (<div className="botones">
-                                <Button onClick={onFollow}> {num < 1 ? "Seguir" : <Spinner animation="border" />}</Button>
-                                <FontAwesomeIcon className="icon" icon={faLock} />
-                            </div>)
+                                </div>) : (<div className="botones">
+                                    <Button onClick={onFollow}>  <FontAwesomeIcon icon={faUserPlus} /> </Button>
+                                    <FontAwesomeIcon className="icon" icon={faLock} />
+                                </div>
+                                )
 
-                        )
-                    }
+                            )
+                        }
+                    </div>
                 </div>
             )
             }

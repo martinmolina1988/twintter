@@ -3,8 +3,6 @@ import "./BasicLayout.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import LeftMenu from "../../components/LeftMenu";
 import RightMenu from '../../components/RightMenu';
-import Menu from '../../components/Menu';
-import SearchInput from '../../components/SearchInput';
 import SideBar from '../../components/sideBar';
 import { Lupa } from "../../utils/Icons"
 import Iconos from '../../components/iconos';
